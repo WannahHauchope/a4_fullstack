@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Full Stack</title>
+		<link rel="stylesheet" href="css/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Love+Ya+Like+A+Sister|Poppins|Ravi+Prakash|Titillium+Web" rel="stylesheet">
+
+		<style>
+			body {
+				background-image: url('images/fullstackweb.jpg');
+			}
+			.ravifont {
+				font-family: 'Ravi Prakash', cursive;
+				text-align: center;
+				font-size: 6em;
+				color: #000066;
+			}
+			h2 {
+				font-family: 'Love Ya Like A Sister', cursive;
+				text-align: center;
+			}
+			h3, h4 {
+				text-align: center
+			}
+			ul {
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1 class="ravifont">FULL STACK!</h1>
+		<h2>Created by Wannah Hauchope / May 2017</h2>
+		<ul>
+			<li>
+				<a href="#home">Home</a>
+			</li>
+			<li>
+				<a href="#news">News</a>
+			</li>
+			<li>
+				<a href="#contact">Contact</a>
+			</li>
+			<li>
+				<a href="#about">About</a>
+			</li>
+		</ul>
+		<h3>I want to be a "Full Stack" web developer - but what does that mean?</h3>
+		<h4>... well let me show you
+		<br>
+		<a href="images/fullstack_overview.svg"> ... well, click here and I'll show yhou what it means! </a></h4>
+		<h5> Task List for Checkpoint 01:
+		<ol>
+			<li>
+				Use Google fonts
+			</li>
+			<li>
+				Use a good, relevant background picture
+			</li>
+			<li>
+				Link to sites or pages for more info
+			</li>
+			<li>
+				In an INTERESTING (not boring!) way explain "full"
+			</li>
+			<li>
+				In an INTERESTING (not boring!) way explain "stack"
+			</li>
+			<li>
+				In an INTERESTING (not boring!) way explain "LAMP stack"
+			</li>
+			<li>
+				Make in-line links to the above key words used in these explanations
+			</li>
+			<li>
+				WHEN DONE WITH THE ABOVE, GET A CHECKPOINT GRADE!
+			</li>
+		</ol></h5>
+		<h5> Task List for Checkpoint 02:
+		<ol>
+			<li>
+				Explain "Database" in general using both text and illustration--
+				be "interesting," not boring! -- do a little Google research
+			</li>
+			<li>
+				Explain MySQL -- text and illustration--
+				do a little Google research
+			</li>
+			<li>
+				Illustrate a typical DB table -- use and illustration
+				on this page, not a clickable page WE WILL DO THIS TOGETHER
+			</li>
+			<li>
+				List and explain the mysql CLI steps to create a DB, table, records... WE WILL DO THIS ENTIRE STEP TOGETHER
+			</li>
+			<li>
+				When done, get a grade for this checkpoint!
+			</li>
+
+		</ol></h5>
+		<h5>What does "full" in Full Stack mean?</h5>
+		<pre>
+			Full means that when you are developing code for a website,
+			 you develop from both ends. The front end, what the user sees on their computer,
+			  or from our perspective, the "client" computer. And the back end, 
+			  the information sent from the server computer (the developers computer) 
+			  to the front.</pre>
+		<h5>What does "Stack" in Full Stack mean?</h5>
+		<pre>
+			Stack means that multiple programs are used
+			(a "stack" of programs).
+			The front end requires HTML5, CSS3, and JavaScript.
+			From the back end we use PHP, and mySQL.
+			There is also a LAMP stack on the server computer.</pre>
+		<h5>What does "<a href="images/LAMP-wip.png">LAMP</a> Stack" mean?</h5>
+		<pre>(turn into own words)
+			LAMP is a stack used for our web page server - remember, a server sends web pages
+			LAMP stands for:
+			L = Linux, which is the sbasis of our server operating system
+			A = Apache, which is our web server
+			M = <a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a>, the database we us
+			P= PHP, which is the programming language we use on the server side
+		</pre>
+		<!-- do some google research and format the definitions into your own words and style -->
+		<p>
+			Explain Database: the organized way to save data on a server. It is necessary for all businesses in order to track employees, customers, products, services, suppliers, etc...
+		</p>
+		<p>
+			Explain MySQL: the 2nd most-used database in the entire world. Oracle is number q because it offers professional support, but it is a paid service. MySQL is free. The inventor of MY SQL...
+		</p>
+
+		<ol>
+			<li>
+				compsci@compsci ~ $ mysql -u root -p
+			</li>
+			<li>
+				Enter Password:
+			</li>
+			<li>
+				mysql>
+			</li>
+			<li>
+				mysql> show databases;
+			</li>
+			<li>
+				mysql> CREATE DATABASES a4_wauchope_16may;
+			</li>
+			<li>
+				mysql> SHOW DATABASES;
+			</li>
+			<li>
+				mysql> USE a4_wauchope_16may;
+			</li>
+
+			<li>
+				<pre>
+mysql> CREATE TABLE student_info (
+  -> id int(8),
+  -> fname varchar(20),
+  -> lname varchar(20)
+  -> );</pre>
+			</li>
+			<li>
+				mysql> DESCRIBE student_info;
+			</li>
+			<li>mysql> DROP DATABASE a4_wauchope_16may;</li>
+			<li><img src="images/createtable.png" alt="create table png" height="225" width="500"></li>
+			<li><img src="images/describetables.png" alt="describe table png" height="200" width="500"></li>
+		</ol>
+
+	</body>
+</html>
